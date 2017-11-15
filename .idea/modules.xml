@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LTLCommon/LTLCommon.iml" filepath="$PROJECT_DIR$/LTLCommon/LTLCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LTLDao/LTLDao.iml" filepath="$PROJECT_DIR$/LTLDao/LTLDao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LTLService/LTLService.iml" filepath="$PROJECT_DIR$/LTLService/LTLService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LTLWeb/LTLWeb.iml" filepath="$PROJECT_DIR$/LTLWeb/LTLWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoveToLive.iml" filepath="$PROJECT_DIR$/LoveToLive.iml" />
+    </modules>
+  </component>
+</project>

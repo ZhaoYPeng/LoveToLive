@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LTLWeb:war">
+    <output-path>$PROJECT_DIR$/LTLWeb/target</output-path>
+    <root id="archive" name="LTLWeb.war">
+      <element id="artifact" artifact-name="LTLWeb:war exploded" />
+    </root>
+  </artifact>
+</component>
