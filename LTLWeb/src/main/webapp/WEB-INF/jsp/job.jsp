@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>打磨工,人才招聘 -  装饰公司</title>
-<meta content="人才招聘,全职,1年经验, " name="keywords" />
-<meta content="精通打磨流程" name="description" />
+<title>人才招聘 -  装饰公司</title>
+<meta content="人才招聘,, " name="keywords" />
+<meta content="人才招聘," name="description" />
 <link rel="stylesheet" type="text/css" href="style/css/style.css" />
 <script type="text/javascript" src="style/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="style/js/lang-chi.min.js"></script>
@@ -28,7 +31,7 @@
           <li > <a href="产品列表页products.html" target="_self"><span>产品管理</span></a> </li>
           <li > <a href="新闻列表页news.html" target="_self"><span>新闻动态</span></a> </li>
           <li > <a href="下载列表页down.html" target="_self"><span>下载专区</span></a> </li>
-          <li > <a href="招聘列表页job.html" target="_self"><span>人才招聘</span></a> </li>
+          <li > <a href="advertise" target="_self"><span>人才招聘</span></a> </li>
           <li > <a href="联系我们contact.html" target="_self"><span>联系我们</span></a> </li>
           <li  class="last-item"> <a href="留言页guestbook.html" target="_self"><span>留言系统</span></a> </li>
         </ul>
@@ -50,61 +53,37 @@
       <div class="clearfix layout-innerpg ">
         <div class="col-main">
           <div class="main-wrap">
-            <div id='jobs-view' class="block first-block block-offer-detail">
+            <div id='jobs-list' class="block first-block">
               <div class="block-head">
                 <div class="head-inner">
-                  <h2 class="title">查看职位</h2>
-                  <div class="links"><a href="招聘列表页job.html">更多</a></div>
+                  <h2 class="title">人才招聘</h2>
                 </div>
               </div>
               <div class="block-content clearfix">
-                <div class="detail-head clearfix">
-                  <h1 class="title">招聘：<span>打磨工</span></h1>
-                  <div class="date">更新时间：1970-01-01</div>
+                <div class="list-table">
+                  <table class="data">
+                    <thead>
+                      <tr>
+                        <th  class="title">招聘</th>
+                        <th>招聘人数</th>
+                        <th>招聘类型</th>
+                        <th>地区</th>
+                        <th>时期</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${advertises}" var="advertise" >
+                      <tr>
+                        <td class="title"><span class="catalog">[ <a href="#">${advertise.department}</a> ]</span> <a href="showjob?id=${advertise.id}">${advertise.position}</a></td>
+                        <td>${advertise.number}</td>
+                        <td>${advertise.type}</td>
+                        <td>${advertise.area}</td>
+                        <td><fmt:formatDate value="${advertise.releasedate}" pattern="yyyy-MM-dd"/></td>
+                      </tr>
+                    </c:forEach>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="detail-list">
-                  <div class="item">部门：设计部</div>
-                  <div class="item">经验：1年经验</div>
-                  <div class="item">招聘人数：3</div>
-                  <div class="item">招聘类型：全职</div>
-                  <div class="item">教育：初中</div>
-                  <div class="item">地区： </div>
-                </div>
-                <div class="detail-list">
-                  <div class="item">联系人：</div>
-                  <div class="item">电话：</div>
-                  <div class="item">邮箱：</div>
-                  <a class="btnwrap btn-h30 btn-resume" href="/jobs/apply/15425" title="提交简历"><span class="btn-inner">提交简历</span></a> </div>
-              </div>
-              <div class="block-foot">
-                <div>
-                  <div>-</div>
-                </div>
-              </div>
-            </div>
-            <div id='jobs-1' class="block">
-              <div class="block-head">
-                <div class="head-inner">
-                  <h2 class="title">描述</h2>
-                </div>
-              </div>
-              <div class="block-content clearfix">
-                <div class="content-text"> 精通打磨流程 </div>
-              </div>
-              <div class="block-foot">
-                <div>
-                  <div>-</div>
-                </div>
-              </div>
-            </div>
-            <div id='jobs-2' class="block">
-              <div class="block-head">
-                <div class="head-inner">
-                  <h2 class="title">需求</h2>
-                </div>
-              </div>
-              <div class="block-content clearfix">
-                <div class="content-text"> 精通打磨流程 </div>
               </div>
               <div class="block-foot">
                 <div>

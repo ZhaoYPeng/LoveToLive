@@ -29,7 +29,7 @@
         <!-- 前缀 -->
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <!-- 后缀-->
-        <property name="suffix" value=".html"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
     <!-- 静态资源的处理 避免被拦截-->
     <mvc:resources mapping="style/js/**" location="/style/js/"/>

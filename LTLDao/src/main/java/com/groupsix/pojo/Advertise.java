@@ -17,6 +17,10 @@ public class Advertise {
 
     private Date releasedate;
 
+    private String description;
+
+    private String requirement;
+
     public String getId() {
         return id;
     }
@@ -71,5 +75,21 @@ public class Advertise {
 
     public void setReleasedate(Date releasedate) {
         this.releasedate = releasedate;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getRequirement() {
+        return requirement;
+    }
+
+    public void setRequirement(String requirement) {
+        this.requirement = requirement;
     }
 }

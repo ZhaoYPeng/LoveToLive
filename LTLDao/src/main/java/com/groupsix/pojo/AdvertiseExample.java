@@ -601,6 +601,146 @@ public class AdvertiseExample {
             addCriterionForJDBCDate("releasedate not between", value1, value2, "releasedate");
             return (Criteria) this;
         }
+
+        public Criteria andDescriptionIsNull() {
+            addCriterion("description is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionIsNotNull() {
+            addCriterion("description is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionEqualTo(String value) {
+            addCriterion("description =", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionNotEqualTo(String value) {
+            addCriterion("description <>", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionGreaterThan(String value) {
+            addCriterion("description >", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionGreaterThanOrEqualTo(String value) {
+            addCriterion("description >=", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionLessThan(String value) {
+            addCriterion("description <", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionLessThanOrEqualTo(String value) {
+            addCriterion("description <=", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionLike(String value) {
+            addCriterion("description like", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionNotLike(String value) {
+            addCriterion("description not like", value, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionIn(List<String> values) {
+            addCriterion("description in", values, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionNotIn(List<String> values) {
+            addCriterion("description not in", values, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionBetween(String value1, String value2) {
+            addCriterion("description between", value1, value2, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionNotBetween(String value1, String value2) {
+            addCriterion("description not between", value1, value2, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementIsNull() {
+            addCriterion("requirement is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementIsNotNull() {
+            addCriterion("requirement is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementEqualTo(String value) {
+            addCriterion("requirement =", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementNotEqualTo(String value) {
+            addCriterion("requirement <>", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementGreaterThan(String value) {
+            addCriterion("requirement >", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementGreaterThanOrEqualTo(String value) {
+            addCriterion("requirement >=", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementLessThan(String value) {
+            addCriterion("requirement <", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementLessThanOrEqualTo(String value) {
+            addCriterion("requirement <=", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementLike(String value) {
+            addCriterion("requirement like", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementNotLike(String value) {
+            addCriterion("requirement not like", value, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementIn(List<String> values) {
+            addCriterion("requirement in", values, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementNotIn(List<String> values) {
+            addCriterion("requirement not in", values, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementBetween(String value1, String value2) {
+            addCriterion("requirement between", value1, value2, "requirement");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequirementNotBetween(String value1, String value2) {
+            addCriterion("requirement not between", value1, value2, "requirement");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

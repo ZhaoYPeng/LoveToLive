@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,7 +29,7 @@
           <li > <a href="产品列表页products.html" target="_self"><span>产品管理</span></a> </li>
           <li > <a href="新闻列表页news.html" target="_self"><span>新闻动态</span></a> </li>
           <li > <a href="下载列表页down.html" target="_self"><span>下载专区</span></a> </li>
-          <li > <a href="招聘列表页job.html" target="_self"><span>人才招聘</span></a> </li>
+          <li > <a href="job" target="_self"><span>人才招聘</span></a> </li>
           <li > <a href="联系我们contact.html" target="_self"><span>联系我们</span></a> </li>
           <li  class="last-item"> <a href="留言页guestbook.html" target="_self"><span>留言系统</span></a> </li>
         </ul>
